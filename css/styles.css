@@ -1,7 +1,8 @@
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   color: #757575;
   font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 ul {
@@ -16,7 +17,6 @@ ul {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   overflow: hidden;
 }
@@ -24,7 +24,7 @@ ul {
 a {
   text-decoration: none;
 }
-
+/* ---------Колір лого------------- */
 :root {
   --brend-color: #2196f3;
 }
@@ -33,11 +33,10 @@ a {
 .header {
 }
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: calc(31 / 26 * 100%);
   text-decoration: none;
   color: #000000;
 }
@@ -52,7 +51,7 @@ a {
 }
 .header-link {
   font-weight: 500;
-  line-height: 16px;
+  line-height: calc(16 / 14 * 100%);
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -63,7 +62,7 @@ a {
 }
 .header-address a {
   font-weight: 500;
-  line-height: 16px;
+  line-height: calc(16 / 14 * 100%);
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -82,7 +81,7 @@ a {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: calc(60 / 14 * 100%);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -91,7 +90,7 @@ a {
 .hero a {
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: calc(30 / 14 * 100%);
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -106,15 +105,13 @@ a {
 }
 .features-item > h3 {
   font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: calc(16 / 14 * 100%);
   text-transform: uppercase;
   color: #212121;
 }
 .features-item > p {
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: calc(24 / 14 * 100%);
 }
 
 /* ---------------------------- */
@@ -129,13 +126,12 @@ a {
 .team h2 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
+  line-height: calc(42 / 36 * 100%);
   color: #212121;
 }
 /* ---------------------------- */
 .team {
-  background-color: #F5F4FA;;
+  background-color: #f5f4fa;
 }
 .team-list {
 }
@@ -145,30 +141,27 @@ a {
 .team-item > h3 {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  line-height: calc(19 / 16 * 100%);
   color: #212121;
 }
 .team-item > p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  line-height: calc(19 / 16 * 100%);
 }
 
 /* ---------------------------- */
 .footer {
-  background-color:  #2F303A;
+  background-color: #2f303a;
 }
 .footer-address > p {
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.03em;
+
   color: #ffffff;
 }
 .footer-address > a {
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: calc(24 / 14 * 100%);
   color: rgba(255, 255, 255, 0.6);
 }
