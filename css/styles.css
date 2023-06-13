@@ -12,7 +12,8 @@ ul {
 }
 
 /* Скритий елемент сторінки */
-.features > h2 {
+.features > h2,
+.category-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -31,15 +32,15 @@ a {
 :root {
   --brend-color: #0073ff;
   --most-of-color-text: #757575;
-/* ---------колір-тексту-світлий--- */
---header-color-light: #ffffff;
---page-title-light:#ffffff;
---hero-title-light: #ffffff;
---logo-light: #ffffff;
---features-item-title-light: #ffffff;
---team-item-title-light: #ffffff;
+  /* ---------колір-тексту-світлий--- */
+  --header-color-light: #ffffff;
+  --page-title-light: #ffffff;
+  --hero-title-light: #ffffff;
+  --logo-light: #ffffff;
+  --features-item-title-light: #ffffff;
+  --team-item-title-light: #ffffff;
 
-/* ---------колір-тексту-темний--- */
+  /* ---------колір-тексту-темний--- */
   --header-color-dark: #212121;
   --page-title-dark: #212121;
   --hero-title-dark: #212121;
@@ -47,21 +48,17 @@ a {
   --features-item-title-light: #212121;
   --team-item-title-dark: #212121;
 
-/* ---------колір-фону-світлий--- */
-  --background-light: #FFFFFF;
-  --background-team-light: #F5F4FA;
-/* ---------колір-фону-темний--- */
+  /* ---------колір-фону-світлий--- */
+  --background-light: #ffffff;
+  --background-team-light: #f5f4fa;
+  /* ---------колір-фону-темний--- */
   --background-dark: ;
-  --background-team-dark: #2F303A;
+  --background-team-dark: #2f303a;
 }
-
-
-
 
 /* -------------page-title------------------------- */
 
-.page-title
-{
+.page-title {
   font-size: 36px;
   line-height: calc(42 / 36 * 100%);
   color: var(--page-title-dark);
@@ -69,7 +66,7 @@ a {
 }
 /* ------------------------------------------- */
 .header {
-
+  background-color: var(--header-color-light);
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -79,7 +76,7 @@ a {
   text-decoration: none;
   color: var(--logo-dark);
 }
-.logo > .accent{
+.logo > .accent {
   color: var(--brend-color);
 }
 .header-menu {
@@ -133,11 +130,11 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
-.hero a:hover{
-  background-color: #188CE8;
+.hero a:hover {
+  background-color: #188ce8;
 }
 
 /* ---------------------------- */
@@ -147,7 +144,7 @@ a {
 }
 .features-item {
 }
-.features-item  .features-item-title {
+.features-item .features-item-title {
   font-weight: 700;
   line-height: calc(16 / 14 * 100%);
   text-transform: uppercase;
@@ -174,7 +171,7 @@ a {
 .team-item {
 }
 
-.team-item > .team-item-title{
+.team-item > .team-item-title {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16 * 100%);
@@ -199,4 +196,57 @@ a {
 .footer-address > a {
   font-weight: 400;
   color: inherit;
+}
+/* ----------------------------------------------------------------- */
+
+.page {
+}
+.category {
+}
+.category-title {
+}
+.category-filters {
+}
+.filters-list {
+}
+.filters-item {
+}
+.filters-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(16 / 26 * 100%);
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 22px;
+}
+
+.filters-btn:active,
+.filters-btn:focus {
+  color: #ffffff;
+  background: #2196f3;
+}
+/* ----------------------- */
+.category-columns {
+}
+.category-column {
+}
+.column {
+}
+.column-link {
+}
+.column-image {
+}
+.column-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18 * 100%);
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.column-subtitle {
+  font-size: 16px;
+  line-height: calc(30 / 16 * 100%);
 }
