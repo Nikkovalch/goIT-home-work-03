@@ -7,6 +7,12 @@ body {
   background-color: var(--background-light);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 ul {
   list-style-type: none;
 }
