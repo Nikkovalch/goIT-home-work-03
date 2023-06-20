@@ -4,6 +4,25 @@ body {
   font-size: 14px;
   background-color: var(--background-light);
 }
+/*Обнулення*/
+h1,h2,h3,h4,h5,h6, ul, p{
+	padding: 0;
+	margin: 0;
+}	
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;}
+/*--------------------*/
+
 button {
   border: none;
 }
@@ -31,8 +50,9 @@ a {
 /* ----------Ширина-контенту---------------------- */
 .container {
   margin: 0 auto;
-  max-width: 1180px;
-  padding: 0 5px;
+  max-width: 1200px;
+  padding: 0 15px;
+
 }
 
 /* ---------Колір лого------------- */
@@ -70,6 +90,14 @@ a {
 .header {
   background-color: var(--header-color-light);
 }
+
+.header > .container {
+  display: flex;
+  align-items: center;
+
+  min-height: 83px;
+
+}
 .logo {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
@@ -83,12 +111,21 @@ a {
   color: var(--brend-color);
 }
 .header-menu {
+  margin-left: 93px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .header-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  row-gap: 20px;
+
 }
 .header-item {
 }
 .header-link {
+  padding: 10px 0;
   font-weight: 500;
   line-height: calc(16 / 14 * 100%);
   letter-spacing: 0.02em;
@@ -100,7 +137,17 @@ a {
   color: var(--brend-color);
 }
 .header-address {
+  padding: 0 0 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 25px;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
+
 .header-address a {
   font-weight: 500;
   line-height: calc(16 / 14 * 100%);
@@ -145,7 +192,6 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
 .hero-btn:hover {
   background-color: #188ce8;
 }
@@ -155,17 +201,25 @@ a {
   padding: 94px 0;
 }
 .features-list {
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+  row-gap: 50px;
 }
 .features-item {
+  padding: 0 15px;
+  flex: 0 1 25%;
 }
 .features-item-title {
   font-weight: 700;
   line-height: calc(16 / 14 * 100%);
   text-transform: uppercase;
-  color: var(--features-item-title-light);
+  color: var(--title-dark);
+  margin-bottom: 10px;
 }
 .features-item > p {
   font-weight: 400;
+  line-height: 24px;
 }
 
 /* -------------box--------------- */
