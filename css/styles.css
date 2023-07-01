@@ -1,8 +1,16 @@
-body {
+html,body{
+	height: 100%;
+	width: 100%;
   font-family: 'Roboto', sans-serif;
   color: var(--most-of-color-text);
   font-size: 14px;
   background-color: var(--background-light);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 /*Обнулення*/
 h1,
@@ -183,6 +191,7 @@ a {
 }
 /* ---------------------------- */
 .page {
+  flex-grow: 1;
 }
 
 /* ------------hero---------------- */
@@ -341,20 +350,24 @@ a {
   margin: 0 -15px;
   row-gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .category-column {
 }
 .column {
   padding: 0 15px;
   flex: 0 1 33.33333333%;
+  min-width: 370px;
+  display: flex;
 }
 
 .column-link {
   display: block;
-  outline: 1px solid #EEE;
+  border: 1px solid #EEE;
   background-color: var(--background-light);
 }
 .column-image {
+  max-width: 100%;
 }
 .column-text {
   padding: 20px 24px;
